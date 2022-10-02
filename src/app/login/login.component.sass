@@ -1,0 +1,52 @@
+
+.container
+  width: 100%
+  height: 100vh
+  background: #ed2736
+
+  header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 1rem
+    color: #fff
+
+    h1
+      text-align: center
+
+    i
+      font-size: 2.5rem
+
+  main
+    background: #fff
+    height: calc(100% - 72px)
+    border-top-right-radius: 1.5rem
+    border-top-left-radius: 1.5rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    .field
+      margin: 1rem
+
+      label
+        font-weight: 600
+        font-size: .75rem
+
+      input
+        width: 100%
+        padding: .75rem
+        border: none
+        border-bottom: 1px solid #141414
+        outline: none
+
+        &:focus
+          border-color: #3162cc
+
+  .login
+    background-color: #3162cc
+    padding: .75rem
+    color: #fff
+    font-weight: 600
+    border: none
+    margin-bottom: 1rem

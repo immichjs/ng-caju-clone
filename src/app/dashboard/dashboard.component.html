@@ -1,0 +1,30 @@
+<div class="container">
+  <header>
+    <p>Oi, <strong>{{ person.name }}</strong></p>
+    <i class='bx bx-show'></i>
+  </header>
+
+  <nav class="navegation">
+    <strong>Benefícios</strong>
+    <ul>
+      <li *ngFor="let benefit of benefits" [ngStyle]="{ 'background-color': benefit.color }">
+        <i [class]="benefit.icon"></i>
+        <div>
+          <span>R$</span>
+          <p class="balance">{{ benefit.balance }}</p>
+        </div>
+        <strong>{{ benefit.title }}</strong>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="other-balances">
+    <strong>Outros saldos</strong>
+
+    <div>
+      <i class='bx bx-credit-card'></i>
+      <p>Saldo livre</p>
+      <p class="balance">R$ {{ person.balance }}</p>
+    </div>
+  </section>
+</div>
